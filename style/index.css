@@ -180,3 +180,31 @@ footer {
 		text-align: center;
 	}
 }
+
+@media (max-width: 500px) {
+	
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+	}
+	
+	header {
+		margin-left: 0;
+		margin-bottom: 74%;
+	}
+
+	nav a {
+		height: 5vh;
+		text-align: center;
+	}
+
+	#splash {
+		margin-left: 0;
+	}
+
+	.galCont {
+		width: 100%;
+		margin-left:0;
+		height: 120vh;
+	}
+}
