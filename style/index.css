@@ -1,1 +1,210 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+	border: 1px solid #4f4f4f;
+}
+/* GENERAL STYLINGS */
+
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    color:#4f4f4f;
+    line-height:1.5;
+    font-family: 'PT Sans', sans-serif;
+	background-color: cadetblue;
+}
+h1, h2, h3{
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    font-size:5rem;
+}
+h2{
+    font-size:3.5rem;
+}
+section{
+    padding:4% 0;
+}
+a{
+    text-decoration:none;
+    color:#4f4f4f;
+}
+
+/* HEADER STYLINGS */
+
+header {
+	height: 48vh;
+    padding: 4%;
+	margin-bottom: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+	background-color: darkgoldenrod;
+}
+
+nav {
+	padding: 2%;
+}
+
+.navButton {
+    border: 3px solid gray;
+	border-radius: 10px;
+	padding: 2rem;
+	background-color: whitesmoke;
+}
+
+.navButton:hover {
+	border: 3px solid gray;
+	background-color: cornflowerblue;
+}
+
+header p {
+	width: 60%;
+}
+
+/* SPLASH IMAGE */
+
+#splash {
+	background-image: url(https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+	padding: 25%;
+	
+}
+
+/* GALLERY SECTION */
+
+#gallery {
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+}
+
+.galCont {
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+}
+
+/* FOOTER */
+
+footer {
+	padding: 4%;
+	display: flex;
+	justify-content: center;
+	background-color: darkgoldenrod;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+	h1 {
+		width: 73%;
+	}
+
+	header {
+		background-color: cadetblue;
+		margin-left: 7%;
+		margin-bottom: 68%;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	header p {
+		width: 96%;
+		margin-top: 5%;
+	}
+
+	#splash {
+		margin-left: 5%;
+		background-position: bottom;
+    	background-size: cover;
+	}
+
+	#gallery {
+		flex-direction: column;
+	}
+
+	.galCont {
+		flex-wrap: wrap;
+		margin-left: 10%;
+	}
+
+	.galCont img {
+		width: 40%;
+	}
+
+	#gallery p {
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+	}
+	
+	header {
+		margin-left: 0;
+		margin-bottom: 74%;
+	}
+
+	nav a {
+		height: 5vh;
+		text-align: center;
+	}
+
+	#splash {
+		margin-left: 0;
+	}
+
+	.galCont {
+		width: 100%;
+		margin-left:0;
+		height: 120vh;
+	}
+}
