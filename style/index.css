@@ -39,6 +39,7 @@ blockquote, q {
     margin: 0;
     padding: 0;
     max-width: 100%;
+	border: 1px solid #4f4f4f;
 }
 /* GENERAL STYLINGS */
 
@@ -118,6 +119,12 @@ header p {
 	justify-content: space-around;
 }
 
+.galCont {
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+}
+
 /* FOOTER */
 
 footer {
@@ -125,4 +132,51 @@ footer {
 	display: flex;
 	justify-content: center;
 	background-color: darkgoldenrod;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+	h1 {
+		width: 73%;
+	}
+
+	header {
+		background-color: cadetblue;
+		margin-left: 7%;
+		margin-bottom: 68%;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	header p {
+		width: 96%;
+		margin-top: 5%;
+	}
+
+	#splash {
+		margin-left: 5%;
+		background-position: bottom;
+    	background-size: cover;
+	}
+
+	#gallery {
+		flex-direction: column;
+	}
+
+	.galCont {
+		flex-wrap: wrap;
+		margin-left: 10%;
+	}
+
+	.galCont img {
+		width: 40%;
+	}
+
+	#gallery p {
+		text-align: center;
+	}
 }
